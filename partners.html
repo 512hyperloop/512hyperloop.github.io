@@ -17,6 +17,9 @@
     <!-- Custom CSS -->
     <link href="css/business-frontpage-partners.css" rel="stylesheet">
 
+	<!-- Slideshow CSS -->
+	<link href="css/slideshow.css" rel="stylesheet">
+	
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -30,7 +33,7 @@
 </head>
 
 <body>
-
+    
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -103,10 +106,27 @@
             <div class="col-lg-2">
                 <h3>Our Partners</h3>
             </div>
+        </div>
+        <div class="row">
             <div class="col-lg-10">
-                <br>
-                <p>[INSERT PARTNERS HERE]</p>
-            </div>
+                <div class="simple-slideshow">
+                	<!-- Begin slideshow -->
+                	<figure class="show"> <!-- Ensures that only the 1st slideshow image appears-->
+                	<!-- Image 1 -->
+                	<img src="images/dopeAF.png" alt="" width="100%" />
+                	<figcaption>Ethan's unofficial banner.</figcaption>
+                	</figure>
+                	<!-- Image 2 -->
+                	<figure>
+                	<img src="images/magentaBanner.png" alt="" width="100%" />
+                	<figcaption>The supposedly "hot pink" version.</figcaption>
+                	</figure>
+                	<!-- Navigation buttons -->
+                	<span class="prev">«</span>
+					<span class="next">»</span>
+				</div>
+				<!-- End slideshow -->
+        	</div>
         </div>
         <!-- Footer -->
         <footer>
@@ -123,6 +143,9 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+
+	<!-- slideshow -->
+	<script src="js/slideshow.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
