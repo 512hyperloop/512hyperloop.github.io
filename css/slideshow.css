@@ -1,66 +1,81 @@
-/* Code from http://themarklee.com/2013/12/26/simple-diy-responsive-slideshow-made-html5-css3-javascript/ */
+/* Most code from http://themarklee.com/2013/12/26/simple-diy-responsive-slideshow-made-html5-css3-javascript/ */
 
-.simple-slideshow{ /*General properties of the slideshow */
-position: relative;
-display: block;
-overflow: hidden;
+.simple-slideshow { /*General properties of the slideshow */
+	position: relative;
+	display: block;
+	overflow: hidden;
+	width:800px;
+	height:300px;
 }
 
-figure{ /* Each picture */
-position: absolute;
-opacity: 0;
-transition: 1s opacity;
+.header { /* The toolbar on top of the slideshow */
+   position: absolute; 
+   top: 0px; 
+   left: 0; 
+   width: 100%;
+   color: #FFA500;
+   background-color: #000000; 
 }
 
-figcaption{ /*Stylizes image captions */
-position: absolute;
-font-family: sans-serif;
-font-size: .8em;
-bottom: .75em;
-right: .35em;
-padding: .25em;
-color: #fff;
-background: rgba(0,0,0, .25);
-border-radius: 2px;
+span {
+	padding-left: 20px;
 }
 
-figcaption a{ /* Stylizes links in caption */
-color: #fff;
+figure { /* Each picture */
+	position: absolute;
+	opacity: 0;
+	transition: 1s opacity;
 }
 
-figure.show{ /* How each picture is shown (similar to figure, but further experimentation is needed to figure out difference) */
-opacity: 1;
-position: static;
-transition: 1s opacity;
+figcaption { /*Stylizes image captions */
+	position: absolute;
+	font-family: sans-serif;
+	font-size: .8em;
+	bottom: .75em;
+	right: .35em;
+	padding: .25em;
+	color: #fff;
+	background: rgba(0,0,0, .25);
+	border-radius: 2px;
 }
 
-.next, .prev{ /* Customizes the arrows that the user can use to go through the slides */
-color: #fff;
-position: absolute;
-background: rgba(0,0,0, .6);
-top: 50%;
-z-index: 1;
-font-size: 2em;
-margin-top: -.75em;
-opacity: .3;
-user-select: none;
+figcaption a { /* Stylizes links in caption */
+	color: #fff;
 }
 
-.next:hover, .prev:hover{ /* When the cursor hovers over the arrows */
-cursor: pointer;
-opacity: 1;
+figure.show { /* How each picture is shown (similar to figure, but further experimentation is needed to figure out difference) */
+	opacity: 1;
+	position: static;
+	transition: 1s opacity;
 }
 
-.next{ /* Just for the arrows on the right of the images */
-right: 0;
-padding: 10px 5px 15px 10px;
-border-top-left-radius: 3px;
-border-bottom-left-radius: 3px;
+.next, .prev { /* Customizes the arrows that the user can use to go through the slides */
+	color: #fff;
+	position: absolute;
+	background: rgba(0,0,0, .6);
+	top: 50%;
+	z-index: 1;
+	font-size: 2em;
+	margin-top: -.75em;
+	opacity: .3;
+	user-select: none;
 }
 
-.prev{ /* Just for the arrows on the left of the images */
-left: 0;
-padding: 10px 10px 15px 5px;
-border-top-right-radius: 3px;
-border-bottom-right-radius: 3px;
+.next:hover, .prev:hover { /* When the cursor hovers over the arrows */
+	cursor: pointer;
+	opacity: 1;
+}
+
+.next { /* Just for the arrows on the right of the images */
+	right: 0;
+	padding: 10px 5px 15px 10px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.prev { /* Just for the arrows on the left of the images */
+	left: 0;
+	padding: 10px 10px 15px 5px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
 }
