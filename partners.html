@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-
+	<!-- jQuery -->
+    <script src="js/jquery.js"></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,6 +21,27 @@
 	<!-- Slideshow CSS -->
 	<link href="css/slideshow.css" rel="stylesheet">
 	
+	<!-- Script to include Platinum Slideshow from another HTML file -->
+    <script> 
+    $(function(){
+      $("#includePlatSlideshow").load("slideshows/platinumSlideshow.html"); 
+    });
+    </script>
+    
+    <!-- Script to include Gold Slideshow from another HTML file -->
+    <script> 
+    $(function(){
+      $("#includeGoldSlideshow").load("slideshows/goldSlideshow.html"); 
+    });
+    </script>
+    
+    <!-- Script to include Silver Slideshow from another HTML file -->
+    <script> 
+    $(function(){
+      $("#includeSilvSlideshow").load("slideshows/silverSlideshow.html"); 
+    });
+    </script>
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -88,7 +110,7 @@
                     <h1 class="tagline">     </h1>
                 </div>
                 <div class="col-lg-4">
-                    <h1 class="tagline"><center>Partners</center></h1>
+                    <h1 class="tagline"><div align="center">Partners</div></h1>
                 </div>
                 <div class="col-lg-4">
                     <h1 class="tagline">     </h1>
@@ -106,91 +128,13 @@
             </div>
         </div>-->
         <!-- Begin Platinum Partners Slideshow -->
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="simple-slideshow">
-                	<!-- Begin slideshow -->
-                	<figure class="show"> <!-- Ensures that only the 1st slideshow image appears-->
-                	<!-- Image 1 -->
-                	<div class="header">
-                		<p><span>Our Platinum Partners</span></p>
-                	</div>
-                	<img src="images/dopeAF.png" alt="" width="100%" />
-                	<figcaption>Ethan's unofficial banner.</figcaption>
-                	</figure>
-                	<!-- Image 2 -->
-                	<figure>
-                	<div class="toolbar">
-                		<p>A possible toolbar goes here.</p>
-                	</div>
-                	<img src="images/magentaBanner.png" alt="" width="100%" />
-                	<figcaption>The supposedly "hot pink" version.</figcaption>
-                	</figure>
-                	<!-- Navigation buttons -->
-                	<span class="prev">«</span>
-					<span class="next">»</span>
-				</div>
-				<!-- End slideshow -->
-        	</div>
-        </div>
+        <div id="includePlatSlideshow">Platinum Slideshow should be here</div>
         <!-- End Platinum Partners Slideshow -->
         <!-- Begin Gold Partners Slideshow -->
-        <div class="row">
-            <div class="col-lg-10">
-                <div class="simple-slideshow">
-                	<!-- Begin slideshow -->
-                	<figure class="show"> <!-- Ensures that only the 1st slideshow image appears-->
-                	<!-- Image 1 -->
-                	<div class="header">
-                		<p><span>Our Gold Partners</span></p>
-                	</div>
-                	<img src="images/dopeAF.png" alt="" width="100%" />
-                	<figcaption>Ethan's unofficial banner.</figcaption>
-                	</figure>
-                	<!-- Image 2 -->
-                	<figure>
-                	<div class="toolbar">
-                		<p>A possible toolbar goes here.</p>
-                	</div>
-                	<img src="images/magentaBanner.png" alt="" width="100%" />
-                	<figcaption>The supposedly "hot pink" version.</figcaption>
-                	</figure>
-                	<!-- Navigation buttons -->
-                	<span class="prev">«</span>
-					<span class="next">»</span>
-				</div>
-				<!-- End slideshow -->
-        	</div>
-        </div>
+        <div id="includeGoldSlideshow">Gold Slideshow should be here</div>
         <!-- End Gold Partners Slideshow -->
         <!-- Begin Silver Partners Slideshow -->
-        <div class="row">
-            <div class="col-lg-10">
-                <div class="simple-slideshow">
-                	<!-- Begin slideshow -->
-                	<figure class="show"> <!-- Ensures that only the 1st slideshow image appears-->
-                	<!-- Image 1 -->
-                	<div class="header">
-                		<p><span>Our Silver Partners</span></p>
-                	</div>
-                	<img src="images/dopeAF.png" alt="" width="100%" />
-                	<figcaption>Ethan's unofficial banner.</figcaption>
-                	</figure>
-                	<!-- Image 2 -->
-                	<figure>
-                	<div class="toolbar">
-                		<p>A possible toolbar goes here.</p>
-                	</div>
-                	<img src="images/magentaBanner.png" alt="" width="100%" />
-                	<figcaption>The supposedly "hot pink" version.</figcaption>
-                	</figure>
-                	<!-- Navigation buttons -->
-                	<span class="prev">«</span>
-					<span class="next">»</span>
-				</div>
-				<!-- End slideshow -->
-        	</div>
-        </div>
+        <div id="includeSilvSlideshow">Silver Slideshow should be here</div>
         <!-- End Silver Partners Slideshow -->
         <!-- Footer -->
         <footer>
@@ -209,7 +153,7 @@
     <script src="js/jquery.js"></script>
 
 	<!-- slideshow -->
-	<script src="js/slideshow.js"></script>
+	<!-- <script src="js/slideshow.js"></script> -->
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>

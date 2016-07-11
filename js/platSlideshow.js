@@ -5,7 +5,7 @@
 (function(document){ //Apply the slideshow functions to the document itself
  
 var counter = 0, //Keeps track of which slide you are on
-$items = document.querySelectorAll('.simple-slideshow figure'),
+$items = document.querySelectorAll('.platSlides figure'),
 numItems = $items.length; //# of images to display
  
 var showCurrent = function(){

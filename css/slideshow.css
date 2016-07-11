@@ -79,3 +79,15 @@ figure.show { /* How each picture is shown (similar to figure, but further exper
 	border-top-right-radius: 3px;
 	border-bottom-right-radius: 3px;
 }
+
+.platSlides {
+	/* Exists to differentiate the Platinum Donor logos from other logos */
+}
+
+.goldSlides {
+	/* Exists to differentiate the Gold Donor logos from other logos */
+}
+
+.silvSlides {
+	/* Exists to differentiate the Silver Donor logos from other logos */
+}
