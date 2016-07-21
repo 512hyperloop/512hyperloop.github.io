@@ -33,3 +33,7 @@ body {
 footer {
     margin: 50px 0;
 }
+
+.table td, tr{
+    text-align:center;
+  }
